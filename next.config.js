@@ -7,7 +7,7 @@ module.exports = {
   assetPrefix:
     process.env.ENVIRONMENT === 'development'
       ? undefined
-      : 'https://raw.githubusercontent.com/therebelrobot/remix-bus-scheduling/main/docs/',
+      : 'https://cdn.jsdelivr.net/gh/therebelrobot/remix-bus-scheduling/docs/',
   env: {
     HOST: process.env.HOST,
     PORT: process.env.PORT,
