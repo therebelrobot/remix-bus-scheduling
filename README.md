@@ -19,7 +19,7 @@ Tech used:
 - [x] The height of the rectangle should be the same across all trips.
 - [x] The rectangle should display the trip’s id field inside.
 
-![screenshot](.github/Still 00001.png)
+<img width="559" alt="Still 00001" src="https://user-images.githubusercontent.com/679178/123076822-53590a00-d3ce-11eb-9c27-85c40cc92d0e.png">
 
 ---
 
@@ -29,7 +29,7 @@ Tech used:
 - [x] No more than one trip should ever be selected at the same time.
 - [x] It should be clear to the user that trips are clickable.
 
-![screen recording](.github/Gif 00001.gif)
+![Gif 00001](https://user-images.githubusercontent.com/679178/123076807-4fc58300-d3ce-11eb-8e8c-2e7763af746a.gif)
 
 ---
 
@@ -40,7 +40,7 @@ Tech used:
 - [x] After moving a trip, it should no longer be selected.
 - [x] If a bus has no trips assigned to it, it should not be displayed.
 
-![screen recording](.github/Gif 00002.gif)
+![Gif 00002](https://user-images.githubusercontent.com/679178/123076808-505e1980-d3ce-11eb-8df8-826fc73f4cc2.gif)
 
 ---
 
@@ -48,7 +48,7 @@ Tech used:
 - [x] Clicking on this row should assign the trip to a new bus.
 - [x] When no trip is selected, the provisional row should not be displayed.
 
-![screen recording](.github/Gif 00003.gif)
+![Gif 00003](https://user-images.githubusercontent.com/679178/123076813-50f6b000-d3ce-11eb-8654-df9b06e688f1.gif)
 
 ---
 
@@ -59,26 +59,26 @@ Tech used:
   - [x] The earliest start time among trips in the bus
   - [x] The latest end time among trips in the bus
 
-![screenshot](.github/Still 00004.png)
+<img width="834" alt="Still 00004" src="https://user-images.githubusercontent.com/679178/123076825-53f1a080-d3ce-11eb-9480-369631623239.png">
 
 ---
 
 ### Additional Polishes:
 
 - Dark mode
-  ![screen recording](.github/Gif 00004.gif)
+  ![Gif 00004](https://user-images.githubusercontent.com/679178/123076815-50f6b000-d3ce-11eb-80f4-db4643c09b3f.gif)
 
 - Route dragging between buses
-  ![screen recording](.github/Gif 00005.gif)
+  ![Gif 00005](https://user-images.githubusercontent.com/679178/123076820-52c07380-d3ce-11eb-8227-86f432f24015.gif)
 
 - SVG buses replacing the boxes
-  ![screenshot](.github/Still 00002.png)
+  <img width="128" alt="Still 00002" src="https://user-images.githubusercontent.com/679178/123076823-53f1a080-d3ce-11eb-8654-6f4a6cafd52a.png">
 
 - faint vertical dividers per hour
-  ![screenshot](.github/Still 00003.png)
+  <img width="117" alt="Still 00003" src="https://user-images.githubusercontent.com/679178/123076824-53f1a080-d3ce-11eb-9209-12c05aff02b3.png">
 
 - "ghost" route on select/hover
-  ![screen recording](.github/Gif 00006.gif)
+  ![Gif 00006](https://user-images.githubusercontent.com/679178/123076799-4e945600-d3ce-11eb-866a-8d8ef2c18ede.gif)
 
 ## Development
 
