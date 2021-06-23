@@ -8,7 +8,6 @@ import {useColorMode} from '_/utils/useColorMode'
 const bgColor = {light: 'white', dark: 'rgb(26, 32, 44)'}
 
 export const AppLayout = ({children}) => {
-  // Do not put state handling here (Graphql, useState, etc.)
   const {colorMode, toggleColorMode} = useColorMode()
   const theme = useTheme()
 

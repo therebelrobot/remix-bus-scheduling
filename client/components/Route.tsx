@@ -47,7 +47,6 @@ export const Route: React.FC<{route: RouteType}> = ({route}) => {
         setShouldShowNewBusRow(true)
       }}
       onClick={() => {
-        console.log('selecting', setSelectedRoute)
         if (isSelectedRoute) return clearSelectedRoute()
         setSelectedRoute(route.id)
       }}
