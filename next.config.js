@@ -4,6 +4,7 @@ module.exports = {
   port: process.env.PORT,
   poweredByHeader: false,
   basePath: process.env.ENVIRONMENT === 'development' ? undefined : '/remix-bus-scheduling',
+  assetPrefix: process.env.ENVIRONMENT === 'development' ? undefined : '/remix-bus-scheduling/',
   env: {
     HOST: process.env.HOST,
     PORT: process.env.PORT,
