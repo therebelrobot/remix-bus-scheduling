@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "echo 'Reading environment from .env if present...'; ./scripts/start",
-    "build": "next build && next export -o build",
+    "build": "next build && next export -o docs",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint --max-warnings=0 --ext=ts,tsx ."
