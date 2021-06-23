@@ -3,6 +3,7 @@ require('dotenv').config()
 module.exports = {
   port: process.env.PORT,
   poweredByHeader: false,
+  basePath: process.env.ENVIRONMENT === 'development' ? undefined : '/remix-bus-scheduling',
   env: {
     HOST: process.env.HOST,
     PORT: process.env.PORT,
