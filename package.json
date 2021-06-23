@@ -12,7 +12,9 @@
     "@emotion/styled": "^10.0.27",
     "@graphql-tools/graphql-file-loader": "^6.2.3",
     "@graphql-tools/load": "^6.2.3",
+    "@svgr/webpack": "^5.5.0",
     "apollo-server-micro": "^2.18.1",
+    "dayjs": "^1.10.5",
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.27",
     "eslint": "^7.9.0",
@@ -24,16 +26,21 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "graphql": "^15.3.0",
     "graphql-import": "^1.0.2",
+    "jsx-runtime": "^1.2.0",
     "knex": "^0.21.5",
     "next": "^9.5.3",
     "next-cookies": "^2.0.3",
     "prettier": "^2.1.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dnd": "^14.0.2",
+    "react-dnd-html5-backend": "^14.0.0",
     "react-dom": "^16.13.1",
-    "react-sigma": "^1.2.35"
+    "react-sigma": "^1.2.35",
+    "zustand": "^3.5.4"
   },
   "scripts": {
     "start": "echo 'Reading environment from .env if present...'; ./scripts/start",
+    "build": "next build && next export -o build",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint --max-warnings=0 --ext=ts,tsx ."
@@ -50,7 +57,7 @@
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "jest": "^26.4.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "prettier-plugin-organize-imports": "^1.1.1",
     "react-test-renderer": "^16.13.1",
     "typescript": "^4.0.3"

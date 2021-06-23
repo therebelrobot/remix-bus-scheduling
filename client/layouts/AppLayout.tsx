@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Box, IconButton} from '@chakra-ui/core'
+import {Box, IconButton, useTheme} from '@chakra-ui/core'
 import {css, Global} from '@emotion/core'
 
 import {useColorMode} from '_/utils/useColorMode'
@@ -10,15 +10,19 @@ const bgColor = {light: 'white', dark: 'rgb(26, 32, 44)'}
 export const AppLayout = ({children}) => {
   // Do not put state handling here (Graphql, useState, etc.)
   const {colorMode, toggleColorMode} = useColorMode()
+  const theme = useTheme()
 
   return (
     <>
       <Global
         styles={css`
           html,
-          * {
+          .transition {
             transition: background-color 0.2s linear, color 0.2s linear, border-color 0.2s linear,
               fill 0.2s linear;
+          }
+          [class*='fillcurrent'] {
+            fill: ${theme.colors.current};
           }
         `}
       />

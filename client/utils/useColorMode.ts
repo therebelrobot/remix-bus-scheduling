@@ -8,5 +8,5 @@ export const useColorMode = () => {
     toggle()
     document.cookie = `isDarkMode=${colorMode === 'light'}`
   }, [toggle])
-  return {colorMode, toggleColorMode}
+  return {colorMode, toggleColorMode, isDark: colorMode === 'dark'}
 }
