@@ -3,8 +3,11 @@ require('dotenv').config()
 module.exports = {
   port: process.env.PORT,
   poweredByHeader: false,
-  basePath: process.env.ENVIRONMENT === 'development' ? undefined : '/remix-bus-scheduling',
-  assetPrefix: process.env.ENVIRONMENT === 'development' ? undefined : '/remix-bus-scheduling/',
+  basePath: process.env.ENVIRONMENT === 'development' ? undefined : '/docs',
+  assetPrefix:
+    process.env.ENVIRONMENT === 'development'
+      ? undefined
+      : 'https://raw.githubusercontent.com/therebelrobot/remix-bus-scheduling/main/docs/',
   env: {
     HOST: process.env.HOST,
     PORT: process.env.PORT,
