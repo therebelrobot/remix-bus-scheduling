@@ -19,7 +19,7 @@ Tech used:
 - [x] The height of the rectangle should be the same across all trips.
 - [x] The rectangle should display the trip’s id field inside.
 
-![screenshot](/.github/Still 00001.png)
+![screenshot](.github/Still 00001.png)
 
 ---
 
@@ -29,7 +29,7 @@ Tech used:
 - [x] No more than one trip should ever be selected at the same time.
 - [x] It should be clear to the user that trips are clickable.
 
-![screen recording](/.github/Gif 00001.gif)
+![screen recording](.github/Gif 00001.gif)
 
 ---
 
@@ -40,7 +40,7 @@ Tech used:
 - [x] After moving a trip, it should no longer be selected.
 - [x] If a bus has no trips assigned to it, it should not be displayed.
 
-![screen recording](/.github/Gif 00002.gif)
+![screen recording](.github/Gif 00002.gif)
 
 ---
 
@@ -48,7 +48,7 @@ Tech used:
 - [x] Clicking on this row should assign the trip to a new bus.
 - [x] When no trip is selected, the provisional row should not be displayed.
 
-![screen recording](/.github/Gif 00003.gif)
+![screen recording](.github/Gif 00003.gif)
 
 ---
 
@@ -59,26 +59,26 @@ Tech used:
   - [x] The earliest start time among trips in the bus
   - [x] The latest end time among trips in the bus
 
-![screenshot](/.github/Still 00004.png)
+![screenshot](.github/Still 00004.png)
 
 ---
 
 ### Additional Polishes:
 
 - Dark mode
-  ![screen recording](/.github/Gif 00004.gif)
+  ![screen recording](.github/Gif 00004.gif)
 
 - Route dragging between buses
-  ![screen recording](/.github/Gif 00005.gif)
+  ![screen recording](.github/Gif 00005.gif)
 
 - SVG buses replacing the boxes
-  ![screenshot](/.github/Still 00002.png)
+  ![screenshot](.github/Still 00002.png)
 
 - faint vertical dividers per hour
-  ![screenshot](/.github/Still 00003.png)
+  ![screenshot](.github/Still 00003.png)
 
 - "ghost" route on select/hover
-  ![screen recording](/.github/Gif 00006.gif)
+  ![screen recording](.github/Gif 00006.gif)
 
 ## Development
 
