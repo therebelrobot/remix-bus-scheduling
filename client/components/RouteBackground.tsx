@@ -24,7 +24,14 @@ export const RouteBackground = ({width}) => {
       </Box>
       <Box flex={1} height="100%" display="flex" flexDirection="row" overflowX="hidden">
         {[...Array(Math.ceil((width - 52) / 19)).keys()].map((_, index) => (
-          <Box as={BusMiddle} height="32px" width="19px" flexShrink={0} fill="currentColor"></Box>
+          <Box
+            as={BusMiddle}
+            key={`route-bg-${index}`}
+            height="32px"
+            width="19px"
+            flexShrink={0}
+            fill="currentColor"
+          ></Box>
         ))}
       </Box>
       <Box width="26px" flexShrink={0}>

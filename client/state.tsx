@@ -2,6 +2,7 @@ import create from 'zustand'
 
 import routesRaw from '_/../data/bus-scheduling-input.json'
 
+// type definitions
 export interface Route {
   id: number
   startTime: number
@@ -17,10 +18,13 @@ export interface State {
   routes: Route[]
   buses: Bus[]
   selectedRoute: null | Route['id']
+  hoveredRoute: null | Route['id']
   shouldShowNewBusRow: boolean
   setShouldShowNewBusRow: (should: boolean) => void
   setSelectedRoute: (routeId: Route['id']) => void
   clearSelectedRoute: () => void
+  setHoveredRoute: (routeId: Route['id']) => void
+  clearHoveredRoute: () => void
   createBus: (busId: Bus['id']) => void
   updateBus: (bus: Bus) => void
   updateBuses: (buses: Bus[]) => void
@@ -69,11 +73,14 @@ export const useStore = create(
     routes,
     buses: defaultBuses,
     selectedRoute: null,
+    hoveredRoute: null,
     shouldShowNewBusRow: false,
     setShouldShowNewBusRow: (shouldShowNewBusRow) =>
       set((state: State) => ({...state, shouldShowNewBusRow})),
     setSelectedRoute: (selectedRoute) => set((state: State) => ({...state, selectedRoute})),
     clearSelectedRoute: () => set((state: State) => ({...state, selectedRoute: null})),
+    setHoveredRoute: (hoveredRoute) => set((state: State) => ({...state, hoveredRoute})),
+    clearHoveredRoute: () => set((state: State) => ({...state, hoveredRoute: null})),
     createBus: (busId) => set((state: State) => ({...state, buses: [...state.buses, {id: busId}]})),
     updateBus: (bus) => set((state: State) => updateBusData([bus], state)),
     updateBuses: (buses) => set((state: State) => updateBusData(buses, state)),
@@ -96,12 +103,16 @@ export const useStore = create(
   })
 )
 
+// selector hooks
 export const useRoutes = () =>
   useStore((state: State) => ({
     routes: state.routes,
     selectedRoute: state.selectedRoute,
     setSelectedRoute: state.setSelectedRoute,
     clearSelectedRoute: state.clearSelectedRoute,
+    hoveredRoute: state.hoveredRoute,
+    setHoveredRoute: state.setHoveredRoute,
+    clearHoveredRoute: state.clearHoveredRoute,
     updateRouteBus: state.updateRouteBus,
     getRoutesByBusId: (busId: number) => getRoutesByBusId(busId, state),
     getRouteById: (id: number) => getRouteById(id, state),

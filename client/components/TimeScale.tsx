@@ -24,6 +24,7 @@ export const TimeScale: React.FC = () => {
           const timeRaw = index * 60
           return (
             <Box
+              key={`time-scale-${index}`}
               height="100%"
               display="flex"
               alignItems="center"

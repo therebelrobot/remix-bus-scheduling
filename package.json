@@ -12,6 +12,7 @@
     "@emotion/styled": "^10.0.27",
     "@graphql-tools/graphql-file-loader": "^6.2.3",
     "@graphql-tools/load": "^6.2.3",
+    "@react-hook/hover": "^4.0.0",
     "@svgr/webpack": "^5.5.0",
     "apollo-server-micro": "^2.18.1",
     "dayjs": "^1.10.5",
